@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript String Functions Workshop</h1>
+        
+        <textarea id="textInput" placeholder="Enter text here..." oninput="updateResults()"></textarea>
+
+        <div class="controls">
+            <button onclick="calculateLength()">Length</button>
+            <button onclick="convertCase('upper')">UPPERCASE</button>
+            <button onclick="convertCase('lower')">lowercase</button>
+            <button onclick="convertCase('title')">Title Case</button>
+            <button onclick="findSubstring()">Find</button>
+            <button onclick="replaceText()">Replace</button>
+            <button onclick="trimText()">Trim</button>
+            <button onclick="splitText()">Split & Join</button>
+            <button onclick="countWords()">Word Count</button>
+            <button onclick="reverseText()">Reverse</button>
+        </div>
+
+        <h2>Result:</h2>
+        <div id="result"></div>
+
+        <h2>History:</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
